@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     dnd5e = {
-      source  = "alisdair/dnd5e"
-      version = "0.0.1"
+      source  = "mcdiarmid.org/alisdair/dnd5e"
+      version = "1.0.0"
     }
   }
 }
