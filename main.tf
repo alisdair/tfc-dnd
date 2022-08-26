@@ -220,6 +220,13 @@ resource "dnd5e_character" "kobold" {
     equipped    = true
     weight      = 1
   }
+    
+  lifecycle {
+    postcondition {
+      condition = self.armor_class < 16
+      error_message = "Armor class is unfairly high (${self.armor_class} >= 16)."
+    }
+  }
 }
 
 resource "dnd5e_roll" "initiative" {
