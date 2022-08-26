@@ -217,7 +217,7 @@ resource "dnd5e_character" "kobold" {
   inventory_item {
     name        = "leather shield"
     armor_class = 3
-    equipped    = true
+    equipped    = false
     weight      = 1
   }
     
